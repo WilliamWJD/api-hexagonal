@@ -1,0 +1,19 @@
+package com.william.hexagonal.application.config;
+
+import com.william.hexagonal.adapters.out.FindAddressByZipCodeAdapter;
+import com.william.hexagonal.adapters.out.InsertCustomerAdapter;
+import com.william.hexagonal.application.core.useCase.InsertCustomerUseCase;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class InsertCustomerConfig {
+
+    @Bean
+    public InsertCustomerUseCase insertCustomerUseCase(
+            FindAddressByZipCodeAdapter findAddressByZipCodeAdapter,
+            InsertCustomerAdapter insertCustomerAdapter
+    ) {
+        return new InsertCustomerUseCase(findAddressByZipCodeAdapter, insertCustomerAdapter);
+    }
+}
