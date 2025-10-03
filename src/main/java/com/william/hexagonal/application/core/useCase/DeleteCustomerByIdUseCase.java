@@ -4,12 +4,12 @@ import com.william.hexagonal.application.ports.in.DeleteCustomerInputPort;
 import com.william.hexagonal.application.ports.in.FindCustomerByIdInputPort;
 import com.william.hexagonal.application.ports.out.DeleteCustomerOutputPort;
 
-public class DeleteCustomerUseCase implements DeleteCustomerInputPort {
+public class DeleteCustomerByIdUseCase implements DeleteCustomerInputPort {
 
     private final FindCustomerByIdInputPort findCustomerByIdInputPort;
     private final DeleteCustomerOutputPort deleteCustomerOutputPort;
 
-    public DeleteCustomerUseCase(FindCustomerByIdInputPort findCustomerByIdInputPort, DeleteCustomerOutputPort deleteCustomerOutputPort) {
+    public DeleteCustomerByIdUseCase(FindCustomerByIdInputPort findCustomerByIdInputPort, DeleteCustomerOutputPort deleteCustomerOutputPort) {
         this.findCustomerByIdInputPort = findCustomerByIdInputPort;
         this.deleteCustomerOutputPort = deleteCustomerOutputPort;
     }
