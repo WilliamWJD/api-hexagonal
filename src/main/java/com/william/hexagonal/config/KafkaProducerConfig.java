@@ -1,4 +1,4 @@
-package com.william.hexagonal.application.config;
+package com.william.hexagonal.config;
 
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.context.annotation.Bean;

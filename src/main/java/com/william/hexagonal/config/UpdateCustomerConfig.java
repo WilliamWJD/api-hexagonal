@@ -1,4 +1,4 @@
-package com.william.hexagonal.application.config;
+package com.william.hexagonal.config;
 
 import com.william.hexagonal.adapters.out.FindAddressByZipCodeAdapter;
 import com.william.hexagonal.adapters.out.UpdateCustomerAdapter;

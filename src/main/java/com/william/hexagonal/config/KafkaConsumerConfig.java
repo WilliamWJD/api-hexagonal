@@ -1,4 +1,4 @@
-package com.william.hexagonal.application.config;
+package com.william.hexagonal.config;
 
 import com.william.hexagonal.adapters.in.consumer.message.CustomerMessage;
 import org.apache.kafka.common.serialization.StringDeserializer;

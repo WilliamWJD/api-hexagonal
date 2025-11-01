@@ -1,6 +1,5 @@
 package com.william.hexagonal.adapters.in.controller.response;
 
-import com.william.hexagonal.adapters.out.client.response.AddressResponse;
 import lombok.Data;
 
 @Data
